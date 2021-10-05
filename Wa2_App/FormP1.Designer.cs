@@ -35,9 +35,11 @@ namespace Wa2_App
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.BtnAvancar = new System.Windows.Forms.Button();
             this.BtnTi = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnPi = new System.Windows.Forms.Button();
+            this.BtnNi = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnJ
@@ -72,7 +74,7 @@ namespace Wa2_App
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(860, 273);
             this.label1.TabIndex = 7;
@@ -114,31 +116,31 @@ namespace Wa2_App
             this.BtnTi.Text = "Totalmente Implementado";
             this.BtnTi.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // BtnPi
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(289, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 56);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Totalmente Implementado";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnPi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnPi.BackColor = System.Drawing.Color.Yellow;
+            this.BtnPi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnPi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPi.Location = new System.Drawing.Point(289, 377);
+            this.BtnPi.Name = "BtnPi";
+            this.BtnPi.Size = new System.Drawing.Size(110, 56);
+            this.BtnPi.TabIndex = 11;
+            this.BtnPi.Text = "Parcialmente Implementado";
+            this.BtnPi.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // BtnNi
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(452, 377);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 56);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Totalmente Implementado";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BtnNi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnNi.BackColor = System.Drawing.Color.Red;
+            this.BtnNi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnNi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnNi.Location = new System.Drawing.Point(452, 377);
+            this.BtnNi.Name = "BtnNi";
+            this.BtnNi.Size = new System.Drawing.Size(110, 56);
+            this.BtnNi.TabIndex = 12;
+            this.BtnNi.Text = "Não Implementado";
+            this.BtnNi.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -150,8 +152,18 @@ namespace Wa2_App
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 56);
             this.button3.TabIndex = 13;
-            this.button3.Text = "Totalmente Implementado";
+            this.button3.Text = "Não Aplicável";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Wa2_App.Properties.Resources._400_filter_nobg_614b999fcc239;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // FormP1
             // 
@@ -159,9 +171,10 @@ namespace Wa2_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnNi);
+            this.Controls.Add(this.BtnPi);
             this.Controls.Add(this.BtnTi);
             this.Controls.Add(this.BtnJ);
             this.Controls.Add(this.BtnR);
@@ -173,6 +186,7 @@ namespace Wa2_App
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "001";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -185,8 +199,9 @@ namespace Wa2_App
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button BtnAvancar;
         private System.Windows.Forms.Button BtnTi;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnPi;
+        private System.Windows.Forms.Button BtnNi;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
