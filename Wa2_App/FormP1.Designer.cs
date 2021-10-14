@@ -37,7 +37,7 @@ namespace Wa2_App
             this.BtnTi = new System.Windows.Forms.Button();
             this.BtnPi = new System.Windows.Forms.Button();
             this.BtnNi = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnNa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,6 +115,7 @@ namespace Wa2_App
             this.BtnTi.TabIndex = 10;
             this.BtnTi.Text = "Totalmente Implementado";
             this.BtnTi.UseVisualStyleBackColor = false;
+            this.BtnTi.Click += new System.EventHandler(this.BtnTi_Click);
             // 
             // BtnPi
             // 
@@ -128,6 +129,7 @@ namespace Wa2_App
             this.BtnPi.TabIndex = 11;
             this.BtnPi.Text = "Parcialmente Implementado";
             this.BtnPi.UseVisualStyleBackColor = false;
+            this.BtnPi.Click += new System.EventHandler(this.BtnPi_Click);
             // 
             // BtnNi
             // 
@@ -141,19 +143,21 @@ namespace Wa2_App
             this.BtnNi.TabIndex = 12;
             this.BtnNi.Text = "Não Implementado";
             this.BtnNi.UseVisualStyleBackColor = false;
+            this.BtnNi.Click += new System.EventHandler(this.BtnNi_Click);
             // 
-            // button3
+            // BtnNa
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(626, 377);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 56);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Não Aplicável";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnNa.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnNa.BackColor = System.Drawing.Color.Silver;
+            this.BtnNa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnNa.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnNa.Location = new System.Drawing.Point(626, 377);
+            this.BtnNa.Name = "BtnNa";
+            this.BtnNa.Size = new System.Drawing.Size(110, 56);
+            this.BtnNa.TabIndex = 13;
+            this.BtnNa.Text = "Não Aplicável";
+            this.BtnNa.UseVisualStyleBackColor = false;
+            this.BtnNa.Click += new System.EventHandler(this.BtnNa_Click);
             // 
             // pictureBox1
             // 
@@ -172,7 +176,7 @@ namespace Wa2_App
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnNa);
             this.Controls.Add(this.BtnNi);
             this.Controls.Add(this.BtnPi);
             this.Controls.Add(this.BtnTi);
@@ -201,7 +205,7 @@ namespace Wa2_App
         private System.Windows.Forms.Button BtnTi;
         private System.Windows.Forms.Button BtnPi;
         private System.Windows.Forms.Button BtnNi;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnNa;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Wa2_App
 {
-    partial class FormP2
+    partial class FormP4
     {
         /// <summary>
         /// Required designer variable.
@@ -29,40 +29,44 @@ namespace Wa2_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnVoltar = new System.Windows.Forms.Button();
-            this.BtnAvancar = new System.Windows.Forms.Button();
+            this.BtnJ = new System.Windows.Forms.Button();
+            this.BtnR = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnNa = new System.Windows.Forms.Button();
             this.BtnNi = new System.Windows.Forms.Button();
             this.BtnPi = new System.Windows.Forms.Button();
             this.BtnTi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnJ = new System.Windows.Forms.Button();
-            this.BtnR = new System.Windows.Forms.Button();
+            this.BtnVoltar = new System.Windows.Forms.Button();
+            this.BtnAvancar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnVoltar
+            // BtnJ
             // 
-            this.BtnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnVoltar.Location = new System.Drawing.Point(716, 526);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.BtnVoltar.TabIndex = 6;
-            this.BtnVoltar.Text = "Voltar";
-            this.BtnVoltar.UseVisualStyleBackColor = true;
-            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            this.BtnJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnJ.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnJ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnJ.Location = new System.Drawing.Point(70, 507);
+            this.BtnJ.Name = "BtnJ";
+            this.BtnJ.Size = new System.Drawing.Size(52, 42);
+            this.BtnJ.TabIndex = 42;
+            this.BtnJ.Text = "J";
+            this.BtnJ.UseVisualStyleBackColor = false;
+            this.BtnJ.Click += new System.EventHandler(this.BtnJ_Click);
             // 
-            // BtnAvancar
+            // BtnR
             // 
-            this.BtnAvancar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAvancar.Location = new System.Drawing.Point(797, 526);
-            this.BtnAvancar.Name = "BtnAvancar";
-            this.BtnAvancar.Size = new System.Drawing.Size(75, 23);
-            this.BtnAvancar.TabIndex = 5;
-            this.BtnAvancar.Text = "Avançar";
-            this.BtnAvancar.UseVisualStyleBackColor = true;
-            this.BtnAvancar.Click += new System.EventHandler(this.BtnAvancar_Click);
+            this.BtnR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnR.BackColor = System.Drawing.SystemColors.Info;
+            this.BtnR.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnR.Location = new System.Drawing.Point(12, 507);
+            this.BtnR.Name = "BtnR";
+            this.BtnR.Size = new System.Drawing.Size(52, 42);
+            this.BtnR.TabIndex = 41;
+            this.BtnR.Text = "R";
+            this.BtnR.UseVisualStyleBackColor = false;
+            this.BtnR.Click += new System.EventHandler(this.BtnR_Click);
             // 
             // pictureBox1
             // 
@@ -71,7 +75,7 @@ namespace Wa2_App
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
             // BtnNa
@@ -83,7 +87,7 @@ namespace Wa2_App
             this.BtnNa.Location = new System.Drawing.Point(626, 377);
             this.BtnNa.Name = "BtnNa";
             this.BtnNa.Size = new System.Drawing.Size(110, 56);
-            this.BtnNa.TabIndex = 19;
+            this.BtnNa.TabIndex = 39;
             this.BtnNa.Text = "Não Aplicável";
             this.BtnNa.UseVisualStyleBackColor = false;
             this.BtnNa.Click += new System.EventHandler(this.BtnNa_Click);
@@ -97,7 +101,7 @@ namespace Wa2_App
             this.BtnNi.Location = new System.Drawing.Point(452, 377);
             this.BtnNi.Name = "BtnNi";
             this.BtnNi.Size = new System.Drawing.Size(110, 56);
-            this.BtnNi.TabIndex = 18;
+            this.BtnNi.TabIndex = 38;
             this.BtnNi.Text = "Não Implementado";
             this.BtnNi.UseVisualStyleBackColor = false;
             this.BtnNi.Click += new System.EventHandler(this.BtnNi_Click);
@@ -111,7 +115,7 @@ namespace Wa2_App
             this.BtnPi.Location = new System.Drawing.Point(289, 377);
             this.BtnPi.Name = "BtnPi";
             this.BtnPi.Size = new System.Drawing.Size(110, 56);
-            this.BtnPi.TabIndex = 17;
+            this.BtnPi.TabIndex = 37;
             this.BtnPi.Text = "Parcialmente Implementado";
             this.BtnPi.UseVisualStyleBackColor = false;
             this.BtnPi.Click += new System.EventHandler(this.BtnPi_Click);
@@ -125,7 +129,7 @@ namespace Wa2_App
             this.BtnTi.Location = new System.Drawing.Point(122, 377);
             this.BtnTi.Name = "BtnTi";
             this.BtnTi.Size = new System.Drawing.Size(110, 56);
-            this.BtnTi.TabIndex = 16;
+            this.BtnTi.TabIndex = 36;
             this.BtnTi.Text = "Totalmente Implementado";
             this.BtnTi.UseVisualStyleBackColor = false;
             this.BtnTi.Click += new System.EventHandler(this.BtnTi_Click);
@@ -139,38 +143,34 @@ namespace Wa2_App
             this.label1.Location = new System.Drawing.Point(12, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(860, 273);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "O documento da Política de Segurança da Informação deve ser aprovado pela Direção" +
-    " da organização (Documento da Política de Segurança da Informação).";
+            this.label1.TabIndex = 35;
+            this.label1.Text = "A Política de Segurança da Informação deve ser publicada e divulgada no âmbito da" +
+    " organização (Documento da Política de Segurança da Informação).";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BtnJ
+            // BtnVoltar
             // 
-            this.BtnJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnJ.BackColor = System.Drawing.SystemColors.Info;
-            this.BtnJ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnJ.Location = new System.Drawing.Point(70, 507);
-            this.BtnJ.Name = "BtnJ";
-            this.BtnJ.Size = new System.Drawing.Size(52, 42);
-            this.BtnJ.TabIndex = 22;
-            this.BtnJ.Text = "J";
-            this.BtnJ.UseVisualStyleBackColor = false;
-            this.BtnJ.Click += new System.EventHandler(this.BtnJ_Click_1);
+            this.BtnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVoltar.Location = new System.Drawing.Point(716, 526);
+            this.BtnVoltar.Name = "BtnVoltar";
+            this.BtnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.BtnVoltar.TabIndex = 34;
+            this.BtnVoltar.Text = "Voltar";
+            this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
             // 
-            // BtnR
+            // BtnAvancar
             // 
-            this.BtnR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnR.BackColor = System.Drawing.SystemColors.Info;
-            this.BtnR.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnR.Location = new System.Drawing.Point(12, 507);
-            this.BtnR.Name = "BtnR";
-            this.BtnR.Size = new System.Drawing.Size(52, 42);
-            this.BtnR.TabIndex = 21;
-            this.BtnR.Text = "R";
-            this.BtnR.UseVisualStyleBackColor = false;
-            this.BtnR.Click += new System.EventHandler(this.BtnR_Click_1);
+            this.BtnAvancar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAvancar.Location = new System.Drawing.Point(797, 526);
+            this.BtnAvancar.Name = "BtnAvancar";
+            this.BtnAvancar.Size = new System.Drawing.Size(75, 23);
+            this.BtnAvancar.TabIndex = 33;
+            this.BtnAvancar.Text = "Avançar";
+            this.BtnAvancar.UseVisualStyleBackColor = true;
+            this.BtnAvancar.Click += new System.EventHandler(this.BtnAvancar_Click);
             // 
-            // FormP2
+            // FormP4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,27 +186,26 @@ namespace Wa2_App
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.BtnAvancar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FormP2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "002";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "FormP4";
+            this.Text = "004";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormP2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button BtnVoltar;
-        private System.Windows.Forms.Button BtnAvancar;
+
+        private System.Windows.Forms.Button BtnJ;
+        private System.Windows.Forms.Button BtnR;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnNa;
         private System.Windows.Forms.Button BtnNi;
         private System.Windows.Forms.Button BtnPi;
         private System.Windows.Forms.Button BtnTi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BtnJ;
-        private System.Windows.Forms.Button BtnR;
+        private System.Windows.Forms.Button BtnVoltar;
+        private System.Windows.Forms.Button BtnAvancar;
     }
 }
